@@ -1,0 +1,12 @@
+.homepage {
+  padding: 0 40px;
+}
+
+.home-heading {
+  text-align: center;
+  font-family: var(--font-geist-sans);
+}
+
+.head {
+  padding: 30px 0;
+}

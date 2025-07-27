@@ -1,0 +1,14 @@
+.singleTodo {
+    font-size: 16px;
+    padding: 60px;
+    text-align: center;
+}
+
+.back {
+    display: block;
+    border: 1px solid rgb(28, 26, 57);
+    border-radius: 3px;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+}

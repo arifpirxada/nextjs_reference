@@ -1,3 +1,21 @@
 .header {
-    background-color: rgba(41, 39, 39, 0.608);
+    background-color: rgb(21 21 22 / 65%);
+    padding: 2rem;
+}
+
+.nav ul {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    padding: 0 60px;
+}
+
+.nav ul li {
+    list-style: none;
+    font-size: 1.6rem;
+    font-family: var(--font-geist-sans);
+}
+
+.nav ul li:first-child {
+    margin-right: auto;
 }

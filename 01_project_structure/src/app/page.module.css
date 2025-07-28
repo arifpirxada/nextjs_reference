@@ -10,3 +10,15 @@
 .head {
   padding: 30px 0;
 }
+
+.ulContain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.ulContain li {
+  list-style: none;
+  color: rgb(253, 129, 34);
+}

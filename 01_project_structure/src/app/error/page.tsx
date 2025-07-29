@@ -1,4 +1,4 @@
-export default function Page() {
+export default function ErrorPage() {
 
     throw new Error("Test error")
 

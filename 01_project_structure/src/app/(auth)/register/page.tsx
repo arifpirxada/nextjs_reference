@@ -1,6 +1,6 @@
 import "@/styles/auth.css"
 
-export default function Page() {
+export default function RegisterPage() {
     return (
         <div className="page py-2">
             <h1 className="heading text-center">Register</h1>

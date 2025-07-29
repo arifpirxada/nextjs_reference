@@ -3,7 +3,7 @@
 import "@/styles/todos.css"
 import Link from "next/link"
 
-export default function Page() {
+export default function TodosPage() {
     return (
         <div className="todos-container">
             <table>

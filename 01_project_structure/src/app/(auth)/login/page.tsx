@@ -1,7 +1,7 @@
 import styles from "./login.module.css"
 import "@/styles/auth.css"
 
-export default function Page() {
+export default function LoginPage() {
   return (
     <div className="page py-2">
       <h1 className="heading text-center">Login</h1>

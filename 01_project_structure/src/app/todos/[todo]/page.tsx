@@ -1,7 +1,7 @@
 import Link from "next/link"
 import styles from "./todo.module.css"
 
-export default async function Page({
+export default async function TodoPage({
     params,
 }: {
     params: Promise<{ todo: string }>

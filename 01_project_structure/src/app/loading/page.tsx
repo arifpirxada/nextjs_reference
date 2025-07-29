@@ -1,4 +1,4 @@
-export default async function Page() {
+export default async function LoadingPage() {
 
     await new Promise(resolve => setTimeout(resolve, 2000));
 

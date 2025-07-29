@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default async function Page({
+export default async function DynamicOptionalCatchAllPage({
     params
 }: {
     params: Promise<{ dynamic: string[] }>

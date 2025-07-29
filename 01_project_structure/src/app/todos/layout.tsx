@@ -1,6 +1,6 @@
 import "@/styles/todos.css"
 
-export default function TodoLayout({
+export default function TodosLayout({
     children,
 }: {
     children: React.ReactNode

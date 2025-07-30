@@ -16,6 +16,7 @@ export default function Home() {
           <li><Link href="/dynamic-catch-all/first-val/second-val/third-val">Dynamic Catch All</Link></li>
           <li><Link href="/dynamic-optional-catch-all/param1/param2/param3">Dynamic Optional Catch All</Link></li>
           <li><Link href="/dashboard">Dashboard</Link></li>
+          <li><Link href="/intercepted-routes">Intercepted Routes</Link></li>
         </ul>
       </div>
     </div>

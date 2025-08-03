@@ -1,0 +1,17 @@
+.homeContain {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 3rem;
+    font-family: cursive;
+}
+
+.homeContain a:hover {
+    color: blue;
+}
+
+@media screen and (max-width: 550px) {
+    .homeContain {
+        flex-wrap: wrap;
+    }
+}

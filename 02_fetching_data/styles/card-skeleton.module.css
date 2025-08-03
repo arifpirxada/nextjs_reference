@@ -1,0 +1,145 @@
+/* Global resets - avoid putting these in CSS module unless scoped carefully */
+/* Prefer to keep global resets in global CSS, but if needed: */
+
+/* :global(*) {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  background-color: #10171E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+/* Container */
+.tweet {
+  background-color: #15202B; /* $item-bg */
+  padding: 0.8rem 0.75rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #38444d; /* $item-border-color */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+  box-sizing: border-box;
+  flex: 0 0 30%;
+}
+
+.tweetContent {
+  margin-left: calc(48px + 10px);
+}
+
+/* Animation keyframes */
+@keyframes skeleton {
+  0% {
+    opacity: 0.2;
+    transform: translateY(6px) scale(0.98);
+  }
+  85%, 100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Reusable skeleton animation */
+.skeletonAnimation {
+  animation: skeleton 1s ease-in-out forwards infinite;
+  animation-direction: alternate;
+  transform-origin: bottom;
+}
+
+/* Specific elements */
+.tweetHeader {
+  composes: skeletonAnimation;
+  /* animation delay not applied */
+}
+
+.tweetText {
+  composes: skeletonAnimation;
+  animation-delay: 200ms;
+}
+
+.tweetFooter {
+  display: flex;
+  margin-top: 1rem;
+  composes: skeletonAnimation;
+  animation-delay: 400ms;
+}
+
+/* Skeleton container */
+.skeleton {
+  background-color: #15202B; /* $item-bg */
+}
+
+/* Avatar */
+.skeletonAvatar {
+  width: 48px;
+  height: 48px;
+  background-color: #1e2c3b; /* lighten($item-bg, 7%) */
+  border-radius: 100%;
+  float: left;
+  composes: skeletonAnimation;
+}
+
+/* Lines */
+.skeletonLine {
+  height: 0.7rem;
+  background-color: #1e2c3b;
+  border-radius: 3px;
+  margin-bottom: 0.3rem;
+}
+
+.skeletonLineHeading {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Image */
+.skeletonImg {
+  height: 250px;
+  background-color: #1e2c3b;
+  border-radius: 0.75rem;
+  margin-top: 1.5rem;
+  composes: skeletonAnimation;
+  animation-delay: 300ms;
+}
+
+/* Buttons */
+.skeletonButton {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-color: #1e2c3b;
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+.skeletonButton:last-child {
+  margin-right: 0;
+}
+
+.skeletonButtonRounded {
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+   .tweet {
+      flex: 0 0 48%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .tweet {
+      flex: 0 0 100%;
+   }
+}

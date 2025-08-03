@@ -1,0 +1,12 @@
+.cardSkeletonList {
+    background-color: #10171E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 40px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}

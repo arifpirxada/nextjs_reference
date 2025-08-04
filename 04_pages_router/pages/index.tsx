@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 
 
 interface BlogCard {
+  id: number;
   imageUrl: string;
   title: string;
   desc: string;
@@ -44,7 +45,7 @@ export default function Home() {
     >
       <div className="flex gap-16 p-8 justify-around mt-4 flex-wrap">
         { blogs.map((blog, i) => (
-          <BlogCard key={ i } imageUrl={ blog.imageUrl } title={ blog.title } desc={ blog.desc } />
+          <BlogCard key={ i } id={ blog.id } imageUrl={ blog.imageUrl } title={ blog.title } desc={ blog.desc } />
         )) }
       </div>
     </div>

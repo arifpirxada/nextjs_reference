@@ -5,7 +5,6 @@ const ContactPage = () => {
     <div className='p-8'>
       <h1 className="text-center text-2xl font-bold">Contact Us</h1>
 
-
       <form className="max-w-sm mx-auto mt-4">
         <div className="mb-5">
           <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
